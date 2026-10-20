@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aftermind | Protecting the brain after stroke</title>
+<meta name="description" content="Aftermind is developing intravenous DMT to protect tissue after acute ischemic stroke.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="nav"><nav class="capsule" aria-label="Main">
+  <div class="pod l"><a href="index.html" aria-label="Aftermind home"><img class="logo" src="logo-white.png" alt="Aftermind"></a></div>
+  <div class="bridge" aria-hidden="true"></div>
+  <div class="pod r">
+    <details class="menu"><summary>About</summary><div class="drop"><a href="leadership-team.html">Leadership Team</a></div></details>
+    <details class="menu"><summary>Our Work</summary><div class="drop"><a href="pipeline.html">Pipeline</a><a href="therapeutic-areas.html">Therapeutic Areas</a><a href="clinical-trials.html">Clinical Trials</a><a href="completed-studies.html">Completed Studies</a><a href="publications.html">Publications</a></div></details>
+  </div>
+</nav></header>
+<main>
+
+<section class="hero photo">
+  <img src="brain-art.jpg" alt="Illustration of a human brain radiating light">
+  <div class="wrap"><div class="txt">
+    <h1>Protecting the brain when every minute counts</h1>
+    <p>We are on a mission to change stroke outcomes by developing an intravenous DMT therapy that protects brain tissue during and after an acute ischemic stroke.</p>
+    <div class="pills"><a class="pill" href="leadership-team.html">About Us</a></div>
+  </div></div>
+</section>
+
+<section class="split">
+  <div class="wrap">
+    <div class="txt">
+      <h2>Reducing the unmet need in acute stroke</h2>
+      <p>Clot-removing treatments can restore blood flow, but eligibility and timing limit who receives them, and they do not directly protect the brain tissue that is still at risk.</p>
+      <div class="pills"><a class="pill" href="therapeutic-areas.html">Therapeutic Areas</a></div>
+    </div>
+    <div class="disc"><img src="brain-stroke.jpg" alt="Illustration of a brain with an ischemic stroke lesion"></div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Stroke in numbers">
+  <div class="wrap">
+    <div class="stat"><p>Around 12 million new strokes occur worldwide every year</p><cite>World Stroke Organization</cite></div>
+    <div class="stat"><p>Someone in the United States has a stroke every 40 seconds, about 795,000 people a year</p><cite>U.S. Centers for Disease Control and Prevention</cite></div>
+    <div class="stat"><p>The acute ischemic stroke drug market is projected to reach $18.9 billion by 2030</p><cite>Research and Markets / The Business Research Company</cite></div>
+  </div>
+</section>
+
+<section class="split rev">
+  <div class="wrap">
+    <div class="disc blue"><img src="brain-top.jpg" alt="Illustration of a brain seen from above"></div>
+    <div class="txt">
+      <h2>Developing evidence-based therapies for ischemia</h2>
+      <p>Our lead program has completed Phase 1 and is ready to start a randomized Phase 2a study in acute ischemic stroke. The same protective biology extends to the heart and other organs that suffer oxygen loss.</p>
+      <div class="pills"><a class="pill" href="pipeline.html">Our Pipeline</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap"><div class="box">
+    <img src="team-abstract.jpg" alt="">
+    <div class="txt">
+      <h3>Clinical expertise, backed by drug development experience</h3>
+      <p>Our team brings together stroke clinicians, pharmaceutical developers and company builders, united by one goal: protecting patients from the lasting damage of ischemic injury.</p>
+      <div class="pills"><a class="pill" href="leadership-team.html">Leadership Team</a></div>
+    </div>
+  </div></div>
+</section>
+</main>
+<footer><div class="wrap">
+  <div class="top"><a href="index.html" aria-label="Aftermind home"><img class="logo" src="logo-white.png" alt="Aftermind"></a>
+  <nav aria-label="Footer"><a href="leadership-team.html">Leadership Team</a><a href="pipeline.html">Pipeline</a><a href="therapeutic-areas.html">Therapeutic Areas</a><a href="clinical-trials.html">Clinical Trials</a><a href="completed-studies.html">Completed Studies</a><a href="publications.html">Publications</a></nav></div>
+  <p>Aftermind, Inc. · Strictly confidential. Not an offer to sell securities. DMT is an investigational product and has not been approved by the FDA or any other regulatory body for any indication. © 2026 Aftermind, Inc.</p>
+</div></footer>
+<script>
+document.addEventListener('click', e => {
+  document.querySelectorAll('details.menu[open]').forEach(d => { if (!d.contains(e.target)) d.open = false; });
+});
+document.querySelectorAll('details.menu').forEach(d => d.addEventListener('toggle', () => {
+  if (d.open) document.querySelectorAll('details.menu[open]').forEach(o => { if (o !== d) o.open = false; });
+}));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('details.menu[open]').forEach(d => d.open = false); });
+</script>
+
+</body>
+</html>

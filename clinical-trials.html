@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Clinical Trials | Aftermind</title>
+<meta name="description" content="Aftermind's upcoming clinical trial of intravenous DMT in acute ischemic stroke.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="nav"><nav class="capsule" aria-label="Main">
+  <div class="pod l"><a href="index.html" aria-label="Aftermind home"><img class="logo" src="logo-white.png" alt="Aftermind"></a></div>
+  <div class="bridge" aria-hidden="true"></div>
+  <div class="pod r">
+    <details class="menu"><summary>About</summary><div class="drop"><a href="leadership-team.html">Leadership Team</a></div></details>
+    <details class="menu"><summary>Our Work</summary><div class="drop"><a href="pipeline.html">Pipeline</a><a href="therapeutic-areas.html">Therapeutic Areas</a><a href="clinical-trials.html" aria-current="page">Clinical Trials</a><a href="completed-studies.html">Completed Studies</a><a href="publications.html">Publications</a></div></details>
+  </div>
+</nav></header>
+<main>
+<section class="hero grad"><div class="wrap"><h1>Clinical Trials</h1></div></section>
+<section class="block"><div class="wrap">
+  <h2>Our clinical trials</h2>
+  <div class="body">
+    <p>Aftermind conducts clinical trials to evaluate intravenous DMT as a potential new treatment for acute ischemic stroke. Our Phase 1 study has been completed, and our Phase 2a study is preparing to launch in Hungary.</p>
+    <p>The study will enroll patients who have had an acute ischemic stroke caused by a large-vessel occlusion and who are treated at the participating stroke center. Recruitment details will be published here once the trial opens.</p>
+  </div>
+</div></section>
+<section class="block" style="padding-top:0"><div class="wrap" style="grid-template-columns:1fr">
+  <div class="tablebox"><table>
+    <thead><tr><th>Trial name</th><th>Condition</th><th>Compound</th><th>Phase</th><th>Location</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>A randomized study to assess the safety and initial efficacy of intravenous DMT in patients with acute ischemic stroke</td><td>Acute ischemic stroke</td><td>IV DMT</td><td>Phase 2a</td><td>Semmelweis University, Budapest, Hungary</td><td>Preparing to launch</td></tr>
+      <tr><td>A study of the pharmacokinetics and safety of intravenous DMT in healthy volunteers</td><td>Healthy volunteers</td><td>IV DMT</td><td>Phase 1</td><td>Centre for Human Drug Research, Leiden, the Netherlands</td><td>Completed · <a href="https://clinicaltrials.gov/study/NCT05559931" target="_blank" rel="noopener">NCT05559931</a></td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+<section class="more"><div class="wrap"><h2>Learn more</h2><div class="cards"><a href="completed-studies.html"><div class="im"><img src="brain-stroke.jpg" alt=""></div><div class="tx"><h3>Completed Studies</h3></div></a><a href="publications.html"><div class="im"><img src="brain-top.jpg" alt=""></div><div class="tx"><h3>Publications</h3></div></a><a href="pipeline.html"><div class="im"><img src="brain-art.jpg" alt=""></div><div class="tx"><h3>Our Work</h3></div></a></div></div></section>
+</main>
+<footer><div class="wrap">
+  <div class="top"><a href="index.html" aria-label="Aftermind home"><img class="logo" src="logo-white.png" alt="Aftermind"></a>
+  <nav aria-label="Footer"><a href="leadership-team.html">Leadership Team</a><a href="pipeline.html">Pipeline</a><a href="therapeutic-areas.html">Therapeutic Areas</a><a href="clinical-trials.html">Clinical Trials</a><a href="completed-studies.html">Completed Studies</a><a href="publications.html">Publications</a></nav></div>
+  <p>Aftermind, Inc. · Strictly confidential. Not an offer to sell securities. DMT is an investigational product and has not been approved by the FDA or any other regulatory body for any indication. © 2026 Aftermind, Inc.</p>
+</div></footer>
+<script>
+document.addEventListener('click', e => {
+  document.querySelectorAll('details.menu[open]').forEach(d => { if (!d.contains(e.target)) d.open = false; });
+});
+document.querySelectorAll('details.menu').forEach(d => d.addEventListener('toggle', () => {
+  if (d.open) document.querySelectorAll('details.menu[open]').forEach(o => { if (o !== d) o.open = false; });
+}));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('details.menu[open]').forEach(d => d.open = false); });
+</script>
+
+</body>
+</html>
